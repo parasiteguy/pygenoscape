@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: pygenoscape
+Version: 0.1.0
+Summary: Genetic landscape surfaces from aligned FASTA or precomputed distance matrices plus GPS coordinates.
+Author-email: "Andrew A. Davinack" <davinack_drew@wheatoncollege.edu>
+Project-URL: Homepage, https://github.com/YOUR_GITHUB_USERNAME/geneland
+Project-URL: Repository, https://github.com/YOUR_GITHUB_USERNAME/geneland
+Project-URL: Issues, https://github.com/YOUR_GITHUB_USERNAME/geneland/issues
+Keywords: population genetics,phylogeography,landscape genetics,genetic distance,PCoA,interpolation,RAD-seq
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.24
+Requires-Dist: pandas>=2.0
+Requires-Dist: scipy>=1.10
+Requires-Dist: pyproj>=3.6
+Requires-Dist: plotly>=5.18
+Dynamic: license-file
+
+# geneland (v0.1)
+
+Generate AIS-like genetic landscape surfaces from:
+- an aligned FASTA (headers encode individual + population), and
+- a CSV of GPS coordinates per individual.
+
+## Install (editable)
+```bash
+pip install -e .

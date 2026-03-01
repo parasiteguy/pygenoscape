@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygenoscape"
+version = "0.1.0"
+description = "Genetic landscape surfaces from aligned FASTA or precomputed distance matrices plus GPS coordinates."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Andrew A. Davinack", email = "davinack_drew@wheatoncollege.edu"}
+]
+keywords = [
+  "population genetics",
+  "phylogeography",
+  "landscape genetics",
+  "genetic distance",
+  "PCoA",
+  "interpolation",
+  "RAD-seq"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+]
+
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scipy>=1.10",
+  "pyproj>=3.6",
+  "plotly>=5.18",
+]
+
+[project.scripts]
+pygenoscape = "pygenoscape.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_GITHUB_USERNAME/geneland"
+Repository = "https://github.com/YOUR_GITHUB_USERNAME/geneland"
+Issues = "https://github.com/YOUR_GITHUB_USERNAME/geneland/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,2 @@
+[console_scripts]
+pygenoscape = pygenoscape.cli:main
